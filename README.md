@@ -22,10 +22,10 @@ urun_3 <- c(250, 1500, 7500)
 
 # Kosinüs benzerliğini hesaplayan fonksiyon
 kosinus_benzerligi <- function(v1, v2) {
-  dot_product <- sum(v1 * v2)  # Skaler çarpım
+  carpimlar <- sum(v1 * v2)  # Skaler çarpım
   norm_v1 <- sqrt(sum(v1^2))  # Vektör 1'in normu
   norm_v2 <- sqrt(sum(v2^2))  # Vektör 2'nin normu
-  return(dot_product / (norm_v1 * norm_v2))  # Kosinüs benzerliği
+  return(carpimlar / (norm_v1 * norm_v2))  # Kosinüs benzerliği
 }
 
 # Hesaplamalar
@@ -37,3 +37,8 @@ benzerlik_2_3 <- kosinus_benzerligi(urun_2, urun_3)
 cat("Kosinüs Benzerliği (Ürün 1 - Ürün 2):", benzerlik_1_2, "\n")
 cat("Kosinüs Benzerliği (Ürün 1 - Ürün 3):", benzerlik_1_3, "\n")
 cat("Kosinüs Benzerliği (Ürün 2 - Ürün 3):", benzerlik_2_3, "\n")
+
+##Sonuç:
+Kosinüs Benzerliği (Ürün 1 - Ürün 2): 0.5630783 
+Kosinüs Benzerliği (Ürün 1 - Ürün 3): 0.9824772 
+Kosinüs Benzerliği (Ürün 2 - Ürün 3): 0.4017306 
