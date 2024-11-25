@@ -12,7 +12,7 @@ Bu projede, üç ürün arasındaki kosinüs benzerliğini hesaplayan bir R kodu
 
 Aşağıda, verilen ürünlerin kosinüs benzerliğini hesaplamak için kullanılan R kodu bulunmaktadır.
 
-#**************************************************************************************************************************
+#******************************************************************************************
 
 # Müşteri Ürün Verileri Arası Kosinüs Benzerliği Hesaplama
 
@@ -40,6 +40,8 @@ Aşağıdaki R kodu, müşteri-ürün veri kümesindeki her örnek (müşteri) a
 ### R Kodu
 
 ```r
+#ÖRNEK_1
+
 # Vektörler
 urun_1 <- c(2, 10, 25)
 urun_2 <- c(4, 55, 12)
@@ -69,6 +71,7 @@ Kosinüs Benzerliği (Ürün 1 - Ürün 3): 0.9824772
 Kosinüs Benzerliği (Ürün 2 - Ürün 3): 0.4017306
 
 #***********************************************************************
+# ÖRNEK_2 üşteri Ürün Verileri Arası Kosinüs Benzerliği Hesaplama
 
 # Veri çerçevesini oluşturma
 data <- data.frame(
